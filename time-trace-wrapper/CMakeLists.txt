@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 # time-trace-wrapper
 add_executable(time-trace-wrapper time-trace-wrapper.cpp)
 target_include_directories(time-trace-wrapper PUBLIC include/)
+target_link_libraries(time-trace-wrapper stdc++fs)
 
 set(CTBENCH_TIME_TRACE_WRAPPER_EXEC
   "${PROJECT_BINARY_DIR}/time-trace-wrapper"
